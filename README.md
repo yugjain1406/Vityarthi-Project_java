@@ -1,128 +1,84 @@
 # Vityarthi-Project_java
 # Food Ordering System - Canteen
 
-## About the Project
+## Overview
 
-Food Ordering System - Canteen is a simple Java based console application which has been developed to simplify the food ordering process in a canteen.
+Food Ordering System - Canteen is a Java console based application which handles and keeps track on the food ordering process in a canteen.
 
-The primary objective of the project is to ease the process of the customers as well as the canteen administrator. The canteen customers can create an account and access all the available food items, add items to cart, place orders and access order history.
+This program allows a customer to view, search and filter available food items, manage the cart, calculate the order amount, place order and view order history. The admin can be able to add, update or delete food items, manage orders, view customers details and view revenue report.
 
-The admin has separate set of options to manage the food menu, update order details, manage the food items and access basic information of registered customers and revenue.
-
-The project is purely developed using Java and stores the required information in text files without using any external database.
----
+This project uses text files for storing all data hence there is no need for a database.
 
 ## Features
 
 ### Customer
-
-- Register a new account
-- Login with username and password
-- View available food menu
-- Search food item
-- Filter food items by category
-- Add item to cart
-- Update item quantity
-- Remove item from cart
-- View cart details
-- Calculates subtotal, discount and tax amount automatically
-- Place order
-- Cash on delivery option
+- Register/Login
+- View/Search and filter food
+- Add/remove items from cart
+- Calculate subtotal, discount, tax and total amount
+- Place orders (Cash on Delivery)
 - View order history
-- Logout
 
 ### Admin
-
-- Admin login
-- View available food items
-- Add new food items
-- Update food items
-- Delete food items
-- Toggle availability of food items
-- View all orders
-- Update order status
-- View all registered customers
+- Admin Login
+- Manage food items (Add, Update, Delete)
+- Manage food items status
+- View/update orders
+- View all customers
 - View revenue report
-- Logout
-
-### Order Status
-
-Following are the order statuses in this system.
-
-- `ORDER_PLACED`
-- `PREPARING`
-- `OUT_FOR_DELIVERY`
-- `DELIVERED`
-- `CANCELLED`
-
-### Billing
-
-The system will automatically calculate the amount of the order based on the selected food items and their quantities.
-A ₹50 discount will be given on an order with a subtotal of ₹300 or more.
-5% tax will be applied to the subtotal amount after the discount has been deducted. The amount will be shown when the customer proceeds to checkout.
----
 
 ## Technologies Used
 
 - Java
-- Java OOPs concepts
-- Java Collections
-- Java Exception Handling
-- Java File Handling
-- Java Date/Time
+- Object Oriented Programming
+- Collection (ArrayList, List)
+- Exception Handling
+- File Handling
+- java.util, java.io, java.text
 
-### Java Libraries
-The following are the java libraries that has been used.
+## Steps To Install And Run
 
-- `java.io`
-- `java.util`
-- `java.text`
+### Requirements
 
-The application does not use any external database to store the information and instead uses text files.
----
+- Java development Kit (JDK)
 
-## Project Structure
+How to check if java is installed:
 
-```text
-Food Ordering System - Canteen
-│
-├── main.java
-│
-└── data
-├── customers.txt
-├── food.txt
-├── orders.txt
-└── payments.txt
-User
-├── Customer
-└── Admin
+```bash
+java -version
+```
 
-Food
-├── VegFood
-└── NonVegFood
+### Steps
 
-Cart
-CartItem
-Order
-
-Payment
-└── CashPayment
-
-UserService
-FoodService
-OrderService
-PaymentService
-
-FileHandler
-InvalidInputException
-OrderStatus '''
-
-## Steps to Install & Run
-
-1. Ensure you have the **Java Development Kit (JDK)** installed on your system.
-2. Clone or download this repository.
-3. Open a terminal or command prompt and navigate to the folder containing `main.java`.
-4. Compile the source code:
+1. Clone or download this repository
+2. Open a terminal or cmd
+3. Go to the directory where the main.java file is located
+4. Compile the java files
 
 ```bash
 javac main.java
+```
+
+5. Execute the application
+
+```bash
+java main
+```
+
+The required data folder and text files will be created.
+
+## Instructions To Test
+
+1. Customer: Register an account, Login, view the food menu, search/filter food and add items to the cart.
+2. Cart & Order: View the subtotal, discount, tax and total amount, then place order via Cash on Delivery.
+3. Order History: Ensure the placed order is available in the order history.
+4. Admin: Login with admin/admin123, manage food items and update order status, view revenue report.
+5. Data Storage: Terminate the application and ensure that all data are saved in the data folder as text files.
+
+## Screenshots
+
+
+All the screenshots is uploaded as the sample output.
+## End
+
+This project was developed to demonstrate the knowledge of Java along with Object Oriented Programming concepts to develop a simple canteen based food ordering system that uses file system to store data.
