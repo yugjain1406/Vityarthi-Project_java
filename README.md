@@ -115,46 +115,14 @@ PaymentService
 
 FileHandler
 InvalidInputException
-OrderStatus
-## How to Run
-Requirements
-Java JDK installed on your system.
-A Java IDE such as VS Code, IntelliJ IDEA, or Eclipse (optional).
-Steps
-Download or clone this repository.
-Open the project folder in your IDE or terminal.
-Make sure the main file is named main.java.
-Open the terminal in the project folder.
-Compile the program:
+OrderStatus '''
+
+## Steps to Install & Run
+
+1. Ensure you have the **Java Development Kit (JDK)** installed on your system.
+2. Clone or download this repository.
+3. Open a terminal or command prompt and navigate to the folder containing `main.java`.
+4. Compile the source code:
+
+```bash
 javac main.java
-Run the program:
-java main
-The required data folder and text files will be created automatically when the program starts.
-## Instructions for Testing
-Customer Testing
-Start the program.
-Select 2. New Customer? Register.
-Enter the name, username, password, 10-digit phone number and address.
-Login using the registered username and password.
-Select 1. View Menu to see the available food items.
-Use 2. Search Food to search for a food item.
-Use 3. Filter by Category to filter the menu.
-Select 4. Add Item to Cart and enter a Food ID and quantity.
-Select 5. View Cart to check the subtotal, discount, tax and final amount.
-Select 7. Checkout and confirm the order.
-Select 8. Order History to check the placed order.
-Admin Testing
-Return to the main menu and select 3. Admin Login.
-Use the following credentials:
-Username: admin
-Password: admin123
-Test the following options:
-View food items
-Add a food item
-Update a food item
-Delete a food item
-Change food availability
-View all orders
-Update order status
-View customers
-View revenue report
